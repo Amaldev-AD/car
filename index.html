@@ -125,6 +125,7 @@
     }
     else{
         window.localStorage.setItem(carobj.key,JSON.stringify(carobj))
+        alert("car added successfully")
     }
 }
 
@@ -145,9 +146,11 @@ function retrieve(){
 function remove(){
     let key=document.getElementById('removekey').value
     window.localStorage.removeItem(key)
+    alert("car removed successfully")
 }
 function clearall(){
     localStorage.clear()
+    alert("all cars cleared")
 }
 </script>
 </html>
